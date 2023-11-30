@@ -1,0 +1,8 @@
+name: My Railway Project
+on:
+  deploy:
+    steps:
+      - name: Import pagos
+        command: npm run db:imp_pagos
+      - name: Import roles
+        command: npm run db:imp_roles 
